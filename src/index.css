@@ -1,0 +1,90 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.btn {
+  font-family: "Roboto", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.swiper-slide {
+  width: 32% !important;
+}
+span.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: #272d67;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fbd062 !important;
+}
+
+.swiper-pagination {
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 50px !important;
+  position: inherit !important;
+  transition: none !important;
+}
+
+.swiper-wrapper {
+  margin-left: -38% !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 20vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-spinner {
+  width: 150px;
+  height: 150px;
+}
+.loader-spinner svg {
+  width: 90%;
+  fill: none;
+}
+
+.load {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 0.7 0.3;
+  stroke-linecap: round;
+  stroke-width: 3px;
+  stroke: #fd4766;
+}
+.load.one {
+  animation: load 1.5s infinite ease-in;
+  animation-direction: reverse;
+}
+.load.two {
+  fill: #fd4766;
+}
+.load.three {
+  animation: load 1.5s infinite;
+}
+
+@keyframes load {
+  100% {
+    transform: rotate(360deg);
+  }
+}
